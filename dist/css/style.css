@@ -1,0 +1,40 @@
+.container {
+  display: flex;
+  max-width: 800px;
+  margin: auto;
+}
+
+.content {
+ font-family: Book Antiqua,Palatino,Palatino Linotype,Palatino LT STD,Georgia,serif; 
+ flex: 75%;
+
+}
+
+input[type=text] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+}
+
+.success {
+	color:green;
+}
+
+.failed {
+	color: red;
+}
+
+.extra {
+ position: relative;
+ float: left;
+ flex: 25%;
+ padding: 15px;
+ 
+}
+
+
+.hint-content {
+  position: absolute;
+  bottom: 100px;
+}
