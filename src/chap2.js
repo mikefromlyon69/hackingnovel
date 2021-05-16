@@ -10,7 +10,7 @@ const files = "cutecat.txt secrets.txt"
 const commands = ["ls", "cat"];
 let current_line = "";
 const catArt = "/\\_/\\ \r\n( o.o )\r\n > ^ <";
-const secrets = "jeffsmith@evilcorp.com"
+const secrets = "jeffsmith@evilcorp.com password:password1234"
  				 
 
 terminal.onKey( (key,ev) => {
