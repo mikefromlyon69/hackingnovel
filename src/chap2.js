@@ -18,8 +18,11 @@ const secrets = "jeffsmith@evilcorp.com password:password1234"
  				 
 
 terminal.onKey( (key,ev) => {
-	current_line += key["key"];
-    if (key["key"] === "\r"){
+	console.log(key["domEvent"]["code"]);
+	if (key["domEvent"]["code"] === "Backspace"){ 
+      terminal.write("\b \b");
+	}
+    else if (key["key"] === "\r"){
     	const commandArgs = parseLine(current_line);
     	processCommand(commandArgs);
     	terminal.write(` \r\n${terminit}`);
@@ -27,6 +30,7 @@ terminal.onKey( (key,ev) => {
     }
     else {
     	terminal.write(key["key"]);
+    	current_line += key["key"];
      }
 });
 
