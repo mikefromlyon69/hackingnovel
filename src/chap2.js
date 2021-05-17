@@ -1,8 +1,12 @@
 import { terminal } from './terminal.js'
-import { successHint, failedHint, setHint} from './hints.js'
+import { Hint} from './hints.js'
+
 
 const hintText = "use ls to list files, use cat <filename> to display the content of a file";
-setHint(hintText);
+const hint_html = document.querySelector("#hint");
+const hint_details_html = document.querySelector("#hint-details");
+const hint = new Hint(hintText, hint_html, hint_details_html);
+hint.setListener();
 
 const terminit = " $ ";
 terminal.write(terminit);
@@ -60,6 +64,14 @@ const processCommand  = (commandArguments) => {
   else {
   	terminal.write("\r\n unknown command");
   }
+};
+
+const setHint = () => {
+  const hintText = "use ls to list files, use cat <filename> to display the content of a file";
+  const hint_html = document.querySelector("#hint");
+  const hint_details_html = document.querySelector("#hint-details");
+  return new Hint(hintText, hint_html, hint_details_html);
+  
 };
 
 
