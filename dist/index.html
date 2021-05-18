@@ -40,24 +40,35 @@
 			</p>
 		
 			<p>
-			Ada reçu le message et n’eut pas de mal à en déchiffrer le sens :
-			
-			<form action="post" id="secretform">
+			Ada reçu le message et n’eut pas de mal à en déchiffrer le sens.
 
-			<input type="text" id="rdv" name="rdv"><br>
-			<input type="submit" value="Verifier">
+			C'était un format dont il lui avait parlé il n'y a pas longtemps: le base64.
+			Il fit un programme rapide en Javascript:
+			
+			
+		
+            <h3>Décoder</h3>
+            <form id="decode_form">
+		        
+	 		    
+	 		    <input type="textarea" id="b64str">
+			    </input>
+	            <input type="submit" value="decode">
+				
 			</form>
+            <div><textarea id="decoded"></textarea></div>
 			</p>
-			<p id="next"></p>
+			<p><a href="chap2.html">Prochain chapitre</a></p>
 		</div>
 		<div class="extra">
 			<div class="hint-content">
-				<p><a href="#" id="hint">Clique ici pour un indice</a></p>
+				<p><a href="#" id="hint">Clique ici pour un indice/explication</a></p>
 	    		<p id="hint-details"></p>
 			</div>
 		
 		</div>
 	</div>
 <script src="chap1.js"></script>
+<script src="base64.js"></script>
 </body>
 </html>
