@@ -18,7 +18,6 @@ const secrets = "jeffsmith@evilcorp.com password:password1234"
  				 
 
 terminal.onKey( (key,ev) => {
-	console.log(key["domEvent"]["code"]);
 	if (key["domEvent"]["code"] === "Backspace"){ 
       terminal.write("\b \b");
 	}
