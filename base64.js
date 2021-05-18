@@ -1,0 +1,1 @@
+(()=>{const e=document.querySelector("#decode_form"),t=document.querySelector("#b64str"),o=document.querySelector("#decoded");e.addEventListener("submit",(function(e){e.preventDefault(),c(t.value)}));const c=e=>{const t=(e=>window.atob(e))(e);o.value=t}})();
