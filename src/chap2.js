@@ -70,7 +70,7 @@ const processCommand  = (commandArguments) => {
 };
 
 const setHint = () => {
-  const hintText = "use ls to list files, use cat <filename> to display the content of a file";
+  const hintText = "This is a terminal. You can launch commands. Use ls to list files, use cat <filename> to display the content of a file";
   const hint_html = document.querySelector("#hint");
   const hint_details_html = document.querySelector("#hint-details");
   return new Hint(hintText, hint_html, hint_details_html);
