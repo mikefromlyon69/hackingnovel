@@ -3,8 +3,8 @@ class Hint {
     this.text = text;
     this.html_element = hint_html;
     this.hintDetails = hint_details_html;
-
-  }
+    this.setListener();
+}
 
 
  

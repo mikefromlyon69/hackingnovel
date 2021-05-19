@@ -11,7 +11,22 @@ decode_form.addEventListener('submit', function (event) {
       displaystring(b64_input.value);
  });
 
+const checkMessage  = (message) => {
+  if (message === "Mister Robot, ce soir!") {
+     decode_area.classList.remove("failed");
+     decode_area.classList.add("success");
+  }
+  else
+  {
+     decode_area.classList.add("failed");
+     decode_area.classList.remove("success");
+  }
+}
+
 const displaystring = (str) => {
   const message_decoded = b64_to_utf8(str);
   decode_area.value = message_decoded;
+  checkMessage(message_decoded);
 };
+
+
