@@ -1,8 +1,8 @@
 class Hint {
-  constructor(text, hint_html, hint_details_html) {
+  constructor(text) {
     this.text = text;
-    this.html_element = hint_html;
-    this.hintDetails = hint_details_html;
+    this.html_element = document.querySelector("#hint");
+    this.hintDetails = document.querySelector("#hint-details");
     this.setListener();
 }
 

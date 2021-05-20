@@ -3,10 +3,7 @@ import { Hint} from './hints.js'
 import { Validation} from './validation.js'
 
 const hintText = "use ls to list files, use cat <filename> to display the content of a file. Example: cat cutecat.txt";
-const hint_html = document.querySelector("#hint");
-const hint_details_html = document.querySelector("#hint-details");
-const hint = new Hint(hintText, hint_html, hint_details_html);
-hint.setListener();
+const hint = new Hint(hintText);
 
 
 const validation_html = document.querySelector("#validation-form");
