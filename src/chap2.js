@@ -5,10 +5,7 @@ import { Validation} from './validation.js'
 const hintText = "use ls to list files, use cat <filename> to display the content of a file. Example: cat cutecat.txt";
 const hint = new Hint(hintText);
 
-
-const validation_html = document.querySelector("#validation-form");
-const validation_input = document.querySelector("#validation-input");
-const validation = new Validation("password1234",validation_html,validation_input);
+const validation = new Validation("password1234");
 
 
 const terminit = " $ ";
@@ -72,12 +69,6 @@ const processCommand  = (commandArguments) => {
   }
 };
 
-const setHint = () => {
-  const hintText = "This is a terminal. You can launch commands. Use ls to list files, use cat <filename> to display the content of a file";
-  const hint_html = document.querySelector("#hint");
-  const hint_details_html = document.querySelector("#hint-details");
-  return new Hint(hintText, hint_html, hint_details_html);
-  
-};
+
 
 
