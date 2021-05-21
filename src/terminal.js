@@ -1,7 +1,8 @@
-import { Terminal } from 'xterm';
+import { HackTerminal }  from './hackterminal.js';
 
-const terminal = new Terminal();
-terminal.setOption('cursorBlink', true)
+
+const terminal = new HackTerminal();
+terminal.setOption('cursorBlink', true);
 terminal.open(document.getElementById('terminal'));
 
 //focus on terminal to make the cursor visible

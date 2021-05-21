@@ -20,43 +20,39 @@ const secrets = "jeffsmith@evilcorp.com password:password1234"
 
 terminal.onKey( (key,ev) => {
 	if (key["domEvent"]["code"] === "Backspace"){ 
-      handle_backspace(); 
+      terminal.handle_backspace(); 
 	}
     else if (key["key"] === "\r"){
-    	const commandArgs = parseLine(current_line);
+    	const commandArgs = terminal.parseLine(terminal.current_line);
     	processCommand(commandArgs);
-    	terminal.write(` \r\n${terminit}`);
-	    current_line = ""; 
+    	terminal.new_line(terminit);
     }
     else {
-    	write_char(key["key"]);
-      cursor_position += 1;
+    	terminal.write_char(key["key"]);
     }
 });
 
-const handle_backspace = () => {
-  if (cursor_position > 0) {
-    terminal.write("\b \b");
-    cursor_position -= 1;
-    current_line = current_line.slice(0, -1);
-  }
-}
-const write_char = (key) => {
-  terminal.write(key);
-  current_line += key;
-}
+// const handle_backspace = () => {
+//   if (cursor_position > 0) {
+//     terminal.write("\b \b");
+//     cursor_position -= 1;
+//     current_line = current_line.slice(0, -1);
+//   }
+// }
+// const write_char = (key) => {
+//   terminal.write(key);
+//   current_line += key;
+// }
 
-const new_line  = () => {
-  return line.split(' ');
-};
 
-const parseLine  = (line) => {
-  return line.split(' ');
-};
+
+// const parseLine  = (line) => {
+//   return line.split(' ');
+// };
 
 
 const displayLs = () => {
-  terminal.write(`\r\n${files}`);	
+ terminal.write(`\r\n${files}`);	
 };
 
 const displayCat = (file) => {
