@@ -1,23 +1,21 @@
-<!doctype html>
-  <html>
-    <head>
-      <meta charset="utf-8">
-      <link rel="stylesheet" href="css/xterm.css" />
-      <link rel="stylesheet" href="css/style.css" />
-      <title>Chapitre 2</title>
-    </head>
-    <body>
-      <div class="container">
-
-        <div class="content">
-          <h1> Chapter 2</h1>
-        <p>Ada n'avait cours qu'à 10h. Si elle demanda à son père de l'emmener pour 9h, c'est qu'elle avait prévu de voir Alan, son camarade de classe et grand ami, dans la salle informatique pour lui montrer ces hacks du week-end, une cible . Elle ouvrit son PC portable et se déplaça dans un répertoire nommé "Hermes". Il contenait les identifants
-        d'une cible qu'ils avaient identifiés il y a déjà plusieurs semaines.</p>
-
-        <p>Commandes disponibles: ls, cat</p>
-        <div id="terminal"></div>
-        Mais, elle dû changer bien vite de fenêtre car le professeur, M. Richie entra dans la pièce.
-        <h3>Entrer le mot de passe pour valider le chapitre</h3>
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" href="css/components/terminal.css" />
+	<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+<div class="container">
+	<div class="content">
+		<h1> Chapter 2</h1>
+	     <p>Ada n'avait cours qu'à 10h. Si elle demanda à son père de l'emmener pour 9h, c'est qu'elle avait prévu de voir Alan, son camarade de classe et grand ami, dans la salle informatique pour lui montrer ces hacks du week-end, une cible . Elle ouvrit son PC portable et se déplaça dans un répertoire nommé "Hermes". Il contenait les identifants
+	     d'une cible qu'ils avaient identifiés il y a déjà plusieurs semaines.</p>
+		<div class="terminal">
+			<span id="commands"></span>
+		</div>
+		<p>Mais, elle dû changer bien vite de fenêtre car le professeur, M. Richie entra dans la pièce.</p>
+		<h3>Entrer la commande qu'Ada a utilisé pour lister les fichiers</h3>
         <form id="validation-form">
           <input type="textarea" id="validation-input">
           <input type="submit" value="valider">
@@ -28,7 +26,8 @@
           <p><a href="#" id="hint">Clique ici pour un indice</a></p>
           <p id="hint-details" hidden>Use ls to list files, use cat <filename> to display the content of a file. Example: cat cutecat.txt</p>
         </div>
-      </div>
-  <script src="chap2.js"></script>
-  </body>
+	</div>
+</div>
+<script src="chap2.js"></script>
+</body>
 </html>
