@@ -8,7 +8,8 @@ class Hint {
 
  
   giveHint = (hintText) => {
-  
+     console.log("show");
+     console.log(this.hintDetails.hidden);
 	   this.hintDetails.hidden = false;
   }
 
