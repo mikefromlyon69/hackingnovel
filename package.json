@@ -16,6 +16,7 @@
     "webpack-cli": "^4.7.0"
   },
   "dependencies": {
+    "typed.js": "^2.0.12",
     "xterm": "^4.12.0"
   }
 }
