@@ -12,20 +12,44 @@ class HackTerminal extends Terminal {
 	handle_backspace = () => {
 	  if (this.cursor_position > 0) {
 	    this.write("\b \b");
+	    this.current_line =  this.current_line.substring(0,this.cursor_position -1) + this.current_line.substring(this.cursor_position, this.current_line.length);
 	    this.cursor_position -= 1;
-	    this.current_line = this.current_line.slice(0, -1);
-	  }
+	   }
 	};
 
-	write_char = (key) => {
-	  this.write(key);
-	  this.current_line += key;
-	  this.cursor_position += 1;
+	insert_chars = (chars) => {
+      this.current_line = [this.current_line.slice(0, this.cursor_position), chars, this.current_line.slice(this.cursor_position)].join('');
 	};
+
+	write_chars = (chars) => {
+	  this.write(chars);
+	  this.insert_chars(chars);
+	  this.cursor_position += chars.length;
+	};
+    
+    write_data = (data) => {
+      if (this.is_letters(data))
+      {
+      	this.write_chars(data);
+      }
+    };
+
+    is_letters = (data) => {
+      return /^[a-zA-Z\.| ]+$/.test(data);
+    }
 
 	new_line  = (terminit) => {
 	  this.write(` \r\n${terminit}`);
 	  this.current_line = ""; 
+	  this.cursor_position = 0 ;
+	};
+
+	move_right = () => {
+      this.cursor_position += 1;
+	};
+
+	move_left = () => {
+      this.cursor_position -= 1;
 	};
 
 	parseLine  = (line) => {
@@ -33,6 +57,7 @@ class HackTerminal extends Terminal {
 	};
 
 	processCommand  = (commandArguments) => {
+
 	  const command = commandArguments[0].replace(/\s/g, '');
 	  if (command === "ls") {
 	      this.displayLs();
