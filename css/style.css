@@ -1,6 +1,6 @@
 .container {
   display: flex;
-  max-width: 800px;
+  max-width: 850px;
   margin: auto;
 }
 
@@ -36,7 +36,7 @@ input[type=text] {
 
 .hint-content {
   position: absolute;
-  bottom: 100px;
+  bottom: 50%;
 }
 
 #decoded {
