@@ -5,6 +5,7 @@ module.exports = {
   	base64  : './src/base64.js',
     chap1: './src/index.js',
     chap2: './src/chap2.js',
+    chap3: './src/chap3.js',
   },
   output: {
     filename: '[name].js',
