@@ -1,18 +1,20 @@
 { 
-   "chapitre1" :
+   "chap1" :
    { 
-    "Validation": null, 
-    "Files": null
+    "validation": null, 
+    "files": null
     },
-    "chapitre2" :{
+    "chap2" :
+    {
       "validation": "ls",
-      "Files": null
+      "files": null
     },
-    "chapitre3":{
+    "chap3":
+    {
       "validation": "password1234",
-      "Files":[
-        ["cutecat.txt","/\\_/\\ \r\n( o.o )\r\n > ^ <"],
-        ["secrets.txt", "jeffsmith@evilcorp.com password:password1234"]
+      "files":[
+        {"name":"cutecat.txt","content":"/\\_/\\ \r\n( o.o )\r\n > ^ <"},
+        {"name":"secrets.txt","content": "jeffsmith@evilcorp.com password:password1234"}
         ]
     }
 }
