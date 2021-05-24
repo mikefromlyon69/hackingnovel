@@ -1,7 +1,7 @@
 import { Base64 } from './base64.js';
 
 const init_base = () => {
-	if (document.querySelector("#decode_form") === undefined) 
+	if (document.querySelector("#decode_form") === null) 
  	{
  	return	
  	}
