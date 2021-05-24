@@ -12,4 +12,9 @@ const load_files = () => {
 	return files_object;
 }
 
-export { load_files };
+const load_validation = () => {
+	return json["validation"];
+}
+
+
+export { load_files, load_validation };

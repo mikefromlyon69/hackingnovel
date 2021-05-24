@@ -1,8 +1,8 @@
 class Validation {
-  constructor(validation_string,validation_html, validation_input) {
+  constructor(validation_string) {
     this.validation_string = validation_string;
-    this.validation_html = document.querySelector("#validation-form");;
-    this.validation_input =  document.querySelector("#validation-input");;
+    this.validation_html = document.querySelector("#validation-form");
+    this.validation_input =  document.querySelector("#validation-input");
     this.set_listener();
  }
 

@@ -1,8 +1,14 @@
+import { hint} from './init_hints.js';
+// import { init_base} from './init_base64.js';
+import { init_valid } from './init_validation.js';
+import { init_term } from './init_terminal.js';
+import { init_type } from './init_typed.js';
 
-import { hint} from './init_hints.js'
-import { Base64} from './base64.js'
-const b64_string = "Mister Robot, ce soir!";
-const b64 = new Base64(b64_string);
+init_valid();
+init_term();
+init_type();
+
+
 
 
 
