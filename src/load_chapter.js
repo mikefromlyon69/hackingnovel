@@ -13,8 +13,12 @@ const load_files = () => {
 }
 
 const load_validation = () => {
-	return json["validation"];
+	return json[chapter]["validation"];
+}
+
+const load_typed = () => {
+	return json[chapter]["typed"];
 }
 
 
-export { load_files, load_validation };
+export { load_files, load_validation, load_typed };

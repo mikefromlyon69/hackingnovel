@@ -2,12 +2,14 @@
    "chap1" :
    { 
     "validation": null, 
-    "files": null
+    "files": null,
+    "typed": null
     },
     "chap2" :
     {
       "validation": "ls",
-      "files": null
+      "files": null,
+      "typed": "$ ls^100 <br>  `cutecat.txt secrets.txt<br>` $ cat cutecat.txt<br>^100 `  /\\_/\\ <br>( o.o ) <br> > ^ <` "
     },
     "chap3":
     {

@@ -19,7 +19,6 @@ const init_term = () => {
             terminal.handle_backspace(); 
         }
         else if (key["key"] === "\r") {
-            console.log(terminal.current_line);
             const commandArgs = terminal.parseLine(terminal.current_line);
             terminal.processCommand(commandArgs);
             terminal.new_line(terminal.terminit);

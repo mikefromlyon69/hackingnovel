@@ -15,7 +15,6 @@ class Validation {
  }
 
  validate = () => {
-
  	if (this.validation_input.value === this.validation_string) 
  	{
  		this.validation_input.classList.add("success");
