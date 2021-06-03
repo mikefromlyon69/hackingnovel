@@ -16,7 +16,14 @@
       "validation": "password1234",
       "files":[
         {"name":"cutecat.txt","content":"/\\_/\\ \r\n( o.o )\r\n > ^ <"},
-        {"name":"secrets.txt","content": "jeffsmith@evilcorp.com password:password1234"}
+        {"name":"secrets.txt","content": "jeffsmith@evilcorp.com password:Iloveb@guettes45"}
         ]
+    },
+     "chap4" :
+    {
+      "validation": "ssh",
+      "files": null,
+      "typed": "$ ssh jeffboy@XX.5.53.222 –p2222 jeffboy@XX.5.43.22’s password:^100 <p>  `The authenticity of host XX.5.43.22  cant be established. ECDSA key fingerprint is SHA256:9zsrpzo5Yq1EQAS2QeHy9xKceQDPLH8F8W6kp7EX2O3Ps.<br> Are you sure you want to continue connecting yes/no?` yes^100 <br>  `Warning: Permanently added XX.5.43.22 (ECDSA) to the list of known hosts. <br> jeffboy@XX.5.43.22 $` "
     }
+
 }
