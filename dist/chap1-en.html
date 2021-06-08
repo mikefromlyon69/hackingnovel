@@ -1,0 +1,75 @@
+<html>
+<head>
+  <meta charset="utf-8">
+
+  <title>Chapitre 1 </title>
+  <meta name="description" content="Web Hacking Novel">
+  <meta name="author" content="Mickael FOSSO">
+
+  <link rel="stylesheet" href="css/style.css">
+  
+</head>
+<body>
+	<div class="container">
+		<div class="content">
+			<h1> Chapter 1</h1>
+			<p>
+				It was the first day of high school. Ada, who spent the night solving a buffer overflow challenge on Root-me was tired.
+			<p>
+			<p>
+				She wasn't used to sleep a lot but two hours was not enough, even for her.
+		  </p>
+		  <p>However, she had to go out of bed. Her father, head of state police Security, had an important presentation and could not afford to be late. She drank her coffee in two sips, rushed in the alley and jumped in the car. She tried to put a rap radio but here father changed it instantly:
+		  You know I don't want that kind of music in my car. And you know I'd rather talk to you. </p>
+		
+			<p>
+			During the trip, they talked about the presentatio;: it was about a hacker who attacked police computer systems. However, he couldn't say more. It was confidential and, anyway, they arrived at their destination.
+
+
+			</p>	
+			<p> 
+			- Good day, my doe.
+			- Good luck, dear Window fan boy!
+			She had indeed found this affectionate but annoying nickname for her Linux user.
+
+
+			</p>	
+			<p>
+			A few minutes before entering class, she received a text from her father:
+			</p>
+			<p>
+			TWlzdGVyIFJvYm90LCBjZSBzb2lyIQ==
+			</p>
+		
+			<p>
+			Ada received the message and had no trouble deciphering its meaning.
+
+			It was a format he had told him about not long ago: base64.
+			She made a quick program in Javascript:
+			
+			
+		
+            <h3>Decode</h3>
+            <form id="decode_form">
+		        
+	 		    
+	 		    <input type="textarea" id="b64str">
+			    </input>
+	            <input type="submit" value="decode">
+				
+			</form>
+            <div><textarea id="decoded"></textarea></div>
+			</p>
+			<p><a href="chap2.html">Prochain chapitre</a></p>
+		</div>
+		<div class="extra">
+			<div class="hint-content">
+				<p><a href="#" id="hint">Clique ici pour un indice/explication</a></p>
+	    		<p id="hint-details" hidden>When we want to represent binary data (an image, an executable) in a textual document, such as an email, the hexadecimal transcription in ASCII of the bytes would multiply the size by two, the base64 encoding makes it possible to limit this increase . </p>
+			</div>
+		
+		</div>
+	</div>
+<script src="main.js"></script>
+</body>
+</html>
